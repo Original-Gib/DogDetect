@@ -6,7 +6,7 @@ from subprocess import call
 #Function to call the btconnect script to connect to the bluetooth device when the blynkAudio script is run
 call(["sh", './btconnect.sh'])
 
-BLYNK_AUTH = 'UOWznNZRG8aCkAD25IGa3xcZqoow4zBi'
+BLYNK_AUTH = '' #enter you Blynk device auth token
 # initialize Blynk
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
 
