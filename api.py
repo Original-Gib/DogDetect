@@ -12,7 +12,7 @@ import BlynkLib
 from time import sleep
 
 
-BLYNK_AUTH = 'UOWznNZRG8aCkAD25IGa3xcZqoow4zBi'
+BLYNK_AUTH = '' #enter you Blynk app auth token
 # initialize Blynk
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
 
@@ -24,9 +24,9 @@ CORS(app)
 # Function to send an email and attachment using SMTP
 def send_mail(eFrom, to, subject, text, attachment):
     # SMTP Server details
-    smtpServer='smtp.mailgun.org'
-    smtpUser='postmaster@sandboxd4ca2b0edd344ffb9ec9548b117ae4b6.mailgun.org'
-    smtpPassword='bf55b8a7c71c49c41fe2e32d8ee05193-f2340574-64992330'
+    smtpServer='' #enter you smtp server
+    smtpUser='' #enter your smtp username
+    smtpPassword='' #enter your smtp password
     port=587
 
     # open attachment and read in as MIME image
